@@ -156,7 +156,6 @@ import marathon2024Rating from './modules/marathon-2024/marathon-2024-rating';
 import instruction from './modules/redesign-site/instruction/instruction';
 import commentsTexarea from './modules/comments-component/comments-texarea';
 import hoverCheckboxLink from './modules/TemplateScript/hover-checkbox-link';
-import MortgageRepaymentCalculator from './modules/calculator-dosrochnogo-mortgage-repayment/MortgageRepaymentCalculatorEntry.vue';
 import SearchFamilyMortgage from './modules/search-family-mortgage/SearchFamilyMortgage.vue';
 import formRatingUniversal from './modules/universal-form/form-rating-universal';
 import formUseFulnessSurvey from './modules/universal-form/usefulness-survey';
@@ -416,15 +415,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
     // eslint-disable-next-line no-unused-vars
-        function initCreditHolidaysCalculator() {
-              // eslint-disable-next-line no-new
-              new Vue({
-                el: '#v-credit-holidays-calculator',
-                components: {
-                  'credit-holidays-calculator': CreditHolidaysCalculator
+            function initCreditHolidaysCalculator() {
+                  // eslint-disable-next-line no-new
+                  new Vue({
+                    el: '#v-credit-holidays-calculator',
+                    components: {
+                      'credit-holidays-calculator': CreditHolidaysCalculator
+                    }
+                  });
                 }
-              });
-            }
 
     // eslint-disable-next-line no-unused-vars
         function initITMortgageSurveys() {
@@ -616,16 +615,6 @@ document.addEventListener('DOMContentLoaded', () => {
               }
             });
         }
-    // eslint-disable-next-line no-unused-vars
-        function initMortgageRepaymentCalculator() {
-          // eslint-disable-next-line no-new
-          new Vue({
-            el: '#v-mortgage-repayment-calculator',
-            components: {
-              'mortgage-repayment-calculator': MortgageRepaymentCalculator
-            }
-          });
-        }
   // eslint-disable-next-line no-unused-vars
         function initSearchFamilyMortgage() {
           // eslint-disable-next-line no-new
@@ -787,10 +776,6 @@ document.addEventListener('DOMContentLoaded', () => {
         {
           id: 'marathon-rating',
           fn: marathon2024Rating
-        },
-        {
-          id: 'v-mortgage-repayment-calculator',
-          fn: initMortgageRepaymentCalculator
         },
         {
           id: 'search-family-mortgage',
