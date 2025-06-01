@@ -1,0 +1,1284 @@
+.mor-rep-calculators{
+  &__block{
+    .calc-tax-deduc-new__wr-function-block{
+      @include respondTo(tablet) {
+        padding-top: 0!important;
+      }
+    }
+    &.active{
+      .calc-tax-deduc-new__wr-function-block{
+        &.active{
+          padding-top: 16px!important;
+        }
+      }
+    }
+    &.mobile-error{
+      .mor-rep-calculators__alarm{
+        //display: block;
+      }
+    }
+  }
+  &__container{
+    padding-top: 48px;
+    padding-bottom: 80px;
+    @include respondTo(mobile) {
+      padding-top: 32px;
+      padding-bottom: 72px;
+    }
+    @include respondTo(small) {
+      padding-top: 24px;
+      padding-bottom: 56px;
+    }
+    .calc-tax-deduc-new__wr-title{
+      max-width: 1070px;
+      .h1_title {
+        max-width: 100%;
+        @media screen and (max-width: 556px){
+          width: min-content;
+        }
+        //line-height: 1.4;
+        .highlighting{
+          display: inline;
+          background-image:linear-gradient(#daff01, #daff01);
+          background-size: 100% 70%;
+          background-position: 0 71%;
+          background-repeat: no-repeat;
+          padding: 0.1em -0.15em;
+          background-color:unset;
+          box-decoration-break:clone;
+          -webkit-box-decoration-break: clone;
+        }
+      }
+      .h1_title__des {
+        margin: 32px auto 0;
+        max-width: 950px;
+        @include respondTo(small) {
+          margin-top: 16px;
+        }
+      }
+    }
+    .calc-tax-deduc-new__wr-block{
+      margin-top: 48px;
+      @include respondTo(mobile) {
+        margin-top: 32px;
+      }
+      @include respondTo(small) {
+        margin-top: 24px;
+      }
+
+    }
+
+  }
+  &__block-grid-area{
+    grid-template-columns: minmax(404px, 1008px) minmax(390px,1fr);
+    @media screen and (max-width: 880px){
+      grid-template-columns: 404px minmax(200px,1fr);
+    }
+    .calc-tax-deduc-new__block-title.big{
+      @media screen and (max-width: 952px) and (min-width : 480px){
+        font-size: 24px;
+        line-height: 117%;
+      }
+    }
+    .calc-tax-deduc-new__result-row{
+      &.two-column{
+        @media screen and (max-width: 900px){
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+
+
+
+    .calc-tax-deduc-new__row-input{
+      @media screen and (max-width: 1350px){
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+    .calc-tax-deduc-new__row-three-column{
+      @media screen and (max-width: 1350px){
+        grid-template-columns: repeat(1,1fr);
+      }
+    }
+    .calc-tax-deduc-new__container-title{
+      position:relative;
+      margin-bottom: 0;
+      .content-note{
+        z-index: 10;
+      }
+    }
+    //.calc-tax-deduc-new__row-title-container{
+    //  margin-bottom: 0;
+    //}
+    .calc-tax-deduc-new__wr-function-block{
+      &.always-active{
+        overflow: unset;
+      }
+      &:not(.always-active){
+        padding-top: 0;
+      }
+    }
+    .calc-tax-deduc-new__wr-function-block{
+      padding-top: 16px;
+      @include respondTo(small) {
+        padding-top: 8px;
+      }
+      &.padding{
+        padding-top: 16px;
+        @include respondTo(small) {
+          padding-top: 8px;
+        }
+      }
+      .calc-tax-deduc-new__row:not(:first-child) {
+        margin-top: 24px;
+      }
+
+
+      &.active{
+        @media screen and (min-width: 979px){
+          grid-template-rows: 1fr;
+          overflow: unset;
+        }
+
+      }
+
+    }
+    .calc-tax-deduc-new__area{
+      &.active{
+
+        .mor-rep-calculators__folding-block-icon{
+          background-image: url("data:image/svg+xml;utf8,%3Csvg%20width%3D%2211%22%20height%3D%222%22%20viewBox%3D%220%200%2011%202%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0%200.666667C0%200.298477%200.298477%200%200.666667%200L10%200C10.3682%200%2010.6667%200.298477%2010.6667%200.666667C10.6667%201.03486%2010.3682%201.33333%2010%201.33333L0.666667%201.33333C0.298477%201.33333%200%201.03486%200%200.666667Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+        }
+        .calc-tax-deduc-new__wr-function-block{
+          padding-top: 16px;
+          @include respondTo(small) {
+            padding-top: 8px;
+          }
+
+        }
+
+      }
+      &.active-overflow{
+        .calc-tax-deduc-new__wr-function-block{
+          overflow: unset;
+        }
+      }
+    }
+    .select__background.modal-special-background {
+      @include respondTo(mobile) {
+        background-color: unset;
+      }
+      @include respondTo(small) {
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+    }
+    .select-list__selection-window{
+      box-shadow:none;
+      z-index: 100;
+    }
+    .calc-tax-deduc-new__block{
+      padding: 32px;
+      @include respondTo(mobile) {
+        padding: 24px;
+      }
+      @include respondTo(small) {
+        padding: 24px;
+      }
+
+    }
+  }
+  .calc-tax-deduc-new__container-title{
+    margin-bottom: 0;
+  }
+  &__body-block{
+    margin-top: 40px;
+    @include respondTo(mobile) {
+      margin-top: 24px;
+    }
+    .calc-tax-deduc-new__container-block{
+      &.open{
+        .select-list__selection-window{
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+  &__row-term{
+    display: flex;
+    column-gap:16px;
+    @include respondTo(small) {
+      column-gap:8px;
+    }
+    .calc-tax-deduc-new__col-input{
+      flex-grow:1;
+      max-width: 248px;
+    }
+  }
+  &__switch{
+    max-width: 108px;
+  }
+  &__radio-type{
+    display: flex;
+    column-gap: 32px;
+    row-gap:12px;
+    @media screen and (max-width: 1170px){
+      align-self: flex-start;
+    }
+    @media screen and (max-width: 1010px){
+      flex-direction: column;
+    }
+
+    @include respondTo(small) {
+      flex-direction:column;
+    }
+    label.calc-tax-deduc-new__row-title-container{
+      margin-bottom: 0;
+    }
+    .calc-tax-deduc-new__row-title-container {
+      margin-bottom: 0;
+    }
+  }
+  &__footer-early-repayment{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    @media screen and (max-width: 1170px){
+      flex-direction: column;
+    }
+    &.active{
+      row-gap: 16px;
+      @include respondTo(small) {
+        row-gap: 16px;
+      }
+    }
+
+    button{
+      @media screen and (max-width: 1170px){
+        width: 100%;
+      }
+    }
+  }
+  &__footer-wrapper-col-right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    row-gap:16px;
+    @media screen and (min-width: 480px){
+      margin-left: auto;
+    }
+    @media screen and (max-width: 1170px){
+      justify-content: center;
+      order: -1;
+    }
+  }
+  &__clear-block{
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    column-gap:10px;
+    margin-left: auto;
+
+    background-color: transparent;
+    padding: 12px 24px;
+    border-radius: 24px;
+    @include respondTo(mobile) {
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+    &:hover{
+      background-color: #efefef;
+    }
+    @media screen and (max-width: 1170px){
+      margin-left: unset;
+    }
+    p{
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $ff-semi-bold;
+      color: $color-text-new;
+      @include respondTo(mobile) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  &__clear-block-icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='22' viewBox='0 0 20 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 2C7.73478 2 7.48043 2.10536 7.29289 2.29289C7.10536 2.48043 7 2.73478 7 3L7 4L13 4V3C13 2.73478 12.8946 2.48043 12.7071 2.29289C12.5196 2.10536 12.2652 2 12 2L8 2ZM15 4V3C15 2.20435 14.6839 1.44129 14.1213 0.87868C13.5587 0.31607 12.7956 0 12 0L8 0C7.20435 0 6.44129 0.31607 5.87868 0.87868C5.31607 1.44129 5 2.20435 5 3L5 4L1 4C0.447715 4 0 4.44772 0 5C0 5.55228 0.447715 6 1 6H2L2 19C2 19.7957 2.31607 20.5587 2.87868 21.1213C3.44129 21.6839 4.20435 22 5 22L15 22C15.7957 22 16.5587 21.6839 17.1213 21.1213C17.6839 20.5587 18 19.7957 18 19L18 6L19 6C19.5523 6 20 5.55228 20 5C20 4.44772 19.5523 4 19 4L15 4ZM4 6L4 19C4 19.2652 4.10536 19.5196 4.29289 19.7071C4.48043 19.8946 4.73478 20 5 20L15 20C15.2652 20 15.5196 19.8946 15.7071 19.7071C15.8946 19.5196 16 19.2652 16 19L16 6L4 6ZM8 9C8.55228 9 9 9.44771 9 10V16C9 16.5523 8.55228 17 8 17C7.44772 17 7 16.5523 7 16L7 10C7 9.44771 7.44772 9 8 9ZM11 10C11 9.44771 11.4477 9 12 9C12.5523 9 13 9.44771 13 10V16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16V10Z' fill='%23252628'/%3e%3c/svg%3e ");
+    width: 20px;
+    height:22px;
+    @include respondTo(mobile) {
+      width: 14px;
+      height:16px;
+    }
+
+  }
+  &__row-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap:20px;
+    row-gap: 24px;
+    &.height{
+      min-height: 25px;
+    }
+    @media screen and (max-width: 1170px){
+      flex-direction: column;
+    }
+  }
+  &__calendar-container-icon{
+    display: flex;
+    align-items: center;
+    column-gap:11px;
+    .property-calculator__input-additional-elem{
+      position:unset;
+    }
+  }
+  &__container-radio-type{
+    .feed_back__user-form-subscription{
+      &:not(:first-child){
+        margin-top: 20px;
+        @include respondTo(small) {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  &__wrapper-calendar-repetition-period{
+    margin-top: 20px;
+
+    column-gap:32px;
+    row-gap:32px;
+    width: 100%;
+    max-width: 618px;
+    @include respondTo(mobile) {
+      flex-direction:column;
+    }
+    &.not-show{
+      display: none;
+    }
+  }
+  &__payment-schedule{
+    margin-top: 32px;
+    overflow-x: auto;
+    .calc-tax-deduc-new__payment-schedule-row-container{
+      min-width: fit-content;
+      padding-left: 16px;
+      padding-right: 32px;
+      &.header-row{
+        position:sticky;
+        top: 0;
+        z-index: 1;
+      }
+
+    }
+    .calc-tax-deduc-new__payment-schedule-tbody{
+      scrollbar-gutter:stable;
+      padding-right: 12px;
+    }
+  }
+  &__payment-schedule-early-container{
+    background-color: #e6e6e6;
+    border-radius:8px;
+    padding: 8px 16px 0;
+    width: calc(100% + 32px);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    & ~ .mor-rep-calculators__payment-schedule-early-container {
+      margin-top: 8px;
+    }
+  }
+  &__early-repayment{
+    .calc-tax-deduc-new__payment-schedule-col{
+      &:last-child{
+        p{
+          color:#699b12;
+        }
+      }
+    }
+  }
+  &__payment-schedule-early-wrapper{
+    position: relative;
+    top: 8px;
+    display: flex;
+    column-gap:8px;
+    padding-left: 64px;
+  }
+  &__payment-schedule-early-plate{
+    border-radius: 4px;
+    padding: 2px 8px;
+    &.yellow{
+      background-color: #daff01;
+    }
+    &.white{
+      background-color: #ffffff;
+    }
+    &.black{
+      background-color: #000000;
+      p{
+        color:#fff;
+      }
+
+    }
+
+
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      font-family: $ff-medium;
+      color:$color-text-new;
+      @include respondTo(mobile) {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  &__block-schedule{
+    padding-right: 20px;
+    &.desctop{
+      @media screen and (max-width: 1100px){
+        display: none;
+      }
+    }
+    &.tablet{
+      display: none;
+      @media screen and (max-width: 1100px){
+        display: block;
+      }
+      @media screen and (max-width: 570px){
+        display: none;
+      }
+    }
+    &.mobile{
+      display: none;
+      padding-right: 9px;
+      @media screen and (max-width: 570px){
+        display: block;
+      }
+    }
+  }
+  &__shedule-calendar{
+    margin-top: 24px;
+  }
+  &__modal-des{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    @include respondTo(small) {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    p{
+      @include common-text;
+    }
+    ul{
+      margin-top: 16px;
+      padding-left: 5px;
+      li {
+        @include common-text;
+        list-style-image: unset;
+        background: url(/dist/css/../img/marker-ok-new.svg) left 4px no-repeat;
+        padding-left: 30px;
+        &:not(:first-child){
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+  &__result-container-title{
+    margin-bottom: 32px;
+    @include respondTo(mobile) {
+      margin-bottom: 24px;
+    }
+  }
+  &__container-footnote{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    row-gap:24px;
+
+    @media screen and (max-width: 900px){
+      flex-direction:column;
+      align-items: flex-start;
+    }
+    @include respondTo(small) {
+      flex-direction:row;
+      column-gap: 16px;
+    }
+  }
+  &__container-footnote-icon{
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+
+
+    @include respondTo(small) {
+      width: 40px;
+      height: 40px;
+    }
+    svg{
+      @include respondTo(small) {
+        width: 14px;
+        height: 14px;
+      }
+
+    }
+  }
+  &__wr-footnote-icon{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z' fill='%23252628'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 5C12.5523 5 13 5.44772 13 6V14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14V6C11 5.44772 11.4477 5 12 5Z' fill='%23252628'/%3e%3cpath d='M13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17C12.5523 17 13 17.4477 13 18Z' fill='%23252628'/%3e%3c/svg%3e ");
+    @include respondTo(small) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__btn-result{
+    background-color: #e6e6e6;
+    color: #999;
+    border-color: transparent;
+
+    &.disabled{
+      pointer-events: unset;
+    }
+    @media screen and (max-width: 1170px){
+      display: none;
+    }
+  }
+  &__btn-result-mobile{
+    width: 100%;
+    pointer-events: unset;
+  }
+  &__folding-block{
+    cursor:pointer;
+    margin-left: auto;
+    display: none;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #252628;
+    @include respondTo(tablet) {
+      display: flex;
+    }
+    @include respondTo(small) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__folding-block-icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 0C6.41421 0 6.75 0.335786 6.75 0.75L6.75 5.25L11.25 5.25C11.6642 5.25 12 5.58579 12 6C12 6.41421 11.6642 6.75 11.25 6.75L6.75 6.75L6.75 11.25C6.75 11.6642 6.41421 12 6 12C5.58579 12 5.25 11.6642 5.25 11.25L5.25 6.75L0.75 6.75C0.335786 6.75 0 6.41421 0 6C0 5.58579 0.335786 5.25 0.75 5.25L5.25 5.25L5.25 0.75C5.25 0.335786 5.58579 0 6 0Z' fill='white'/%3e%3c/svg%3e ");
+    width: 12px;
+    height:12px;
+  }
+  &__mobile-button-result{
+    display: none;
+    @media screen and (max-width: 1170px){
+      display: block;
+    }
+  }
+  &__shedule-calendar-mobile-container{
+    margin-top: 37px;
+    max-height: 878px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 15px;
+  }
+  &__shedule-calendar-mobile-value{
+    font-size: 14px;
+    line-height: 143%;
+    color:$color-text-new;
+    font-family: $ff-medium;
+    &.green{
+      color:#699b12;
+    }
+  }
+  &__shedule-calendar-mobile-icon{
+    width: 12px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M6 0C6.41421 0 6.75 0.335786 6.75 0.75V5.25H11.25C11.6642 5.25 12 5.58579 12 6C12 6.41421 11.6642 6.75 11.25 6.75H6.75V11.25C6.75 11.6642 6.41421 12 6 12C5.58579 12 5.25 11.6642 5.25 11.25V6.75H0.75C0.335786 6.75 0 6.41421 0 6C0 5.58579 0.335786 5.25 0.75 5.25H5.25V0.75C5.25 0.335786 5.58579 0 6 0Z' fill='%23252628'/%3e%3c/svg%3e");
+
+  }
+  &__shedule-calendar-mobile{
+    padding-top: 8px;
+  }
+
+
+  &__shedule-calendar-mobile-item{
+    padding: 12px 0 12px 16px;
+    border-top: 1px solid #e6e6e6;
+    &:last-child{
+      border-bottom: 1px solid #e6e6e6;
+    }
+    .calc-tax-deduc-new__wr-function-block{
+      padding-top: 0;
+    }
+    .mor-rep-calculators__payment-schedule-early-wrapper{
+      top: 0;
+      padding-left: 0;
+      margin-bottom: 12px;
+    }
+    &:has(+ &.mortgage-holidays){
+      border-bottom: 1px solid #e6e6e6;
+    }
+    &.mortgage-holidays~.mortgage-holidays{
+      //margin-top: 12px;
+      border-top: 0;
+      .mor-rep-calculators__payment-schedule-early-wrapper {
+        display: none;
+      }
+    }
+    &.mortgage-holidays{
+      margin: 12px 0;
+      padding-right: 18px;
+      background-color: #e6e6e6;
+      border-radius: 8px;
+      .mor-rep-calculators__calendar-mobile-item-col.row{
+        .mor-rep-calculators__shedule-calendar-mobile-value{
+          transform:translateX(9px);
+        }
+      }
+    }
+    &.active{
+      .mor-rep-calculators__shedule-calendar-mobile-icon:not(.early){
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='2' viewBox='0 0 11 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.00012207 0.666667C0.00012207 0.298477 0.298599 0 0.666789 0H10.0001C10.3683 0 10.6668 0.298477 10.6668 0.666667C10.6668 1.03486 10.3683 1.33333 10.0001 1.33333H0.666789C0.298599 1.33333 0.00012207 1.03486 0.00012207 0.666667Z' fill='%23252628'/%3e%3c/svg%3e");
+      }
+    }
+
+  }
+
+  &__shedule-calendar-mobile-item-early{
+    position:relative;
+    padding-right: 18px;
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    width: calc(100% + 16px);
+    transform: translateX(-16px);
+    margin-top: 24px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &:before{
+      content: "";
+      display: block;
+      height: 1px;
+      background-color: #e6e6e6;
+      transform: translate(-17px, -28px);
+      width: calc(100% + 32px);
+    }
+    .mor-rep-calculators__payment-schedule-early-wrapper{
+      flex-direction: column;
+      row-gap:4px;
+    }
+    .mor-rep-calculators__payment-schedule-early-plate{
+      width: max-content;
+    }
+    &.active-early{
+      .mor-rep-calculators__shedule-calendar-mobile-icon{
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='2' viewBox='0 0 11 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.00012207 0.666667C0.00012207 0.298477 0.298599 0 0.666789 0H10.0001C10.3683 0 10.6668 0.298477 10.6668 0.666667C10.6668 1.03486 10.3683 1.33333 10.0001 1.33333H0.666789C0.298599 1.33333 0.00012207 1.03486 0.00012207 0.666667Z' fill='%23252628'/%3e%3c/svg%3e");
+      }
+      .mor-rep-calculators__wr-function-block{
+        grid-template-rows: 1fr;
+      }
+    }
+  }
+
+
+  &__cal-mobile-item-container{
+    &.active{
+      .mor-rep-calculators__shedule-calendar-mobile-icon{
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='11' height='2' viewBox='0 0 11 2' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.00012207 0.666667C0.00012207 0.298477 0.298599 0 0.666789 0H10.0001C10.3683 0 10.6668 0.298477 10.6668 0.666667C10.6668 1.03486 10.3683 1.33333 10.0001 1.33333H0.666789C0.298599 1.33333 0.00012207 1.03486 0.00012207 0.666667Z' fill='%23252628'/%3e%3c/svg%3e");
+      }
+
+    }
+
+  }
+  &__shedule-calendar-mobile-row{
+    display: flex;
+    column-gap:16px;
+    &.margin{
+      margin-top: 8px;
+    }
+  }
+  &__calendar-mobile-item-col{
+    width: 50%;
+    //&.first{
+    //  width: 100%;
+    //  max-width: 120px;
+    //}
+    //&.second{
+    //  flex-grow:1;
+    //}
+    &.row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      -webkit-column-gap: 5px;
+      -moz-column-gap: 5px;
+      column-gap: 5px;
+    }
+  }
+  &__shedule-calendar-mobile-key{
+    font-family: $ff-medium;
+    font-size: 12px;
+    line-height: 133%;
+    color:#6d6d6d;
+    &.col-1{
+      max-width: 127px;
+    }
+    &.col-2{
+      max-width: 160px;
+    }
+
+  }
+
+
+
+  &__shedule-calendar-mobile-wrapper{
+    display: grid;
+    grid-template-columns: minmax(120px, 1fr) minmax(112px, 1fr);
+    grid-column-gap: 16px;
+    align-items: center;
+  }
+  &__shedule-calendar-mobile-month{
+    font-size: 16px;
+    line-height: 125%;
+    color:$color-text-new;
+    font-family: $ff-semi-bold;
+  }
+  &__repetition-period{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+
+  &__wrapper-match-warning{
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    &.margin{
+      margin-top: 24px;
+    }
+    &.display-none{
+      display: none;
+    }
+  }
+  &__match-warning-wr-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #fff;
+    flex-shrink: 0;
+    @include respondTo(small) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__match-warning-icon{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z' fill='%23DE4A2A'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 5C12.5523 5 13 5.44772 13 6V14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14V6C11 5.44772 11.4477 5 12 5Z' fill='%23DE4A2A'/%3e%3cpath d='M13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17C12.5523 17 13 17.4477 13 18Z' fill='%23DE4A2A'/%3e%3c/svg%3e");
+    @include respondTo(small) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__match-warning-des{
+    width: 100%;
+    max-width: 610px;
+  }
+  &__input-error{
+    color: #de4a2a;
+    position: relative;
+    font-family: Gilroy-Medium, sans-serif;
+    font-size: 12px;
+    line-height: 133%;
+    margin-top: 4px;
+    text-align: start;
+    &.display-none{
+      display: none;
+    }
+  }
+  &__block-early-repayment{
+    &.show-error{
+
+    }
+  }
+  &__calendar-data{
+    .property-calculator__vanilla-calendar{
+      @media (min-width: 1351px) and (max-width: 1645px){
+        right: -70px;
+      }
+    }
+  }
+  &__alarm{
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z' fill='%23DE4A2A'/%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 5C12.5523 5 13 5.44772 13 6V14C13 14.5523 12.5523 15 12 15C11.4477 15 11 14.5523 11 14V6C11 5.44772 11.4477 5 12 5Z' fill='%23DE4A2A'/%3e%3cpath d='M13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17C12.5523 17 13 17.4477 13 18Z' fill='%23DE4A2A'/%3e%3c/svg%3e");
+    flex-shrink: 0;
+    @media only screen and (min-width: 979px) {
+      display: none!important;
+      &.display-none-alarm{
+        display: none;
+      }
+    }
+    @include respondTo(small) {
+      width: 16px;
+      height: 16px;
+    }
+    &.display-none-alarm{
+      display: block;
+      &.display-none{
+        display: block;
+      }
+    }
+    &.display-none{
+      display: none;
+    }
+  }
+  &__block-title{
+    &:before{
+      content:"";
+      display: block;
+      position:absolute;
+      width: 107%;
+      height: 169%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.calc-tax-deduc-new__block-title.big{
+      @media screen and (max-width: 952px) and (min-width: 480px){
+        font-size: 24px;
+        line-height: 117%;
+      }
+    }
+
+  }
+  &__soc-list{
+    margin-top: 40px;
+    @include respondTo(mobile) {
+      margin-top: 24px;
+    }
+
+
+  }
+  &__row-three-columns{
+    column-gap:16px
+  }
+  &__earlr-repayment-footer{
+    margin-top: 40px!important;
+    @media screen and (max-width: 1170px){
+      order:2;
+      margin-top: 24px!important;
+    }
+    @include respondTo(small) {
+      margin-top: 24px!important;
+    }
+    .mor-rep-calculators__footer-wrapper-col-right{
+      @media screen and (max-width: 1170px){
+        margin-left: unset;
+      }
+    }
+  }
+
+
+
+  &__radio-button-switch{
+    &.radio-button-switch{
+      max-width: 196px;
+      flex-grow:1;
+    }
+  }
+  &__row-title-switch{
+    margin-bottom: 16px;
+  }
+  &__wr-search{
+    padding: 16px 11px 16px 16px;
+    p{
+      font-size: 14px;
+      font-family: $ff-medium;
+      color:$color-text-new;
+      line-height: 143%;
+    }
+  }
+  &__background{
+    @media screen and (min-width: 480px){
+      display: none!important;
+    }
+  }
+  &__parent-tooltip-mobile{
+    &.tooltip-active{
+      .select-list__selection-window.modal-special-styles:not(.mor-rep-calculators__list-periodicity) {
+        transform: translateY(0);
+      }
+      .select__background:not(.mor-rep-calculators__background-periodicity){
+        display: block;
+      }
+    }
+  }
+  &__body-block-eerly-repayment{
+    display: flex;
+    flex-direction: column;
+    .mor-rep-calculators__wrapper-match-warning{
+      @media screen and (max-width: 1170px){
+        order:1;
+      }
+    }
+
+
+  }
+  &__after-sand-error{
+    @media screen and (max-width: 1170px){
+      //display: none;
+    }
+  }
+  &__shedule-footer-share{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 12px;
+    @include respondTo(small) {
+      margin-top: 24px;
+      .btn_s{
+        width: 100%;
+      }
+    }
+  }
+  &__shedule-footer-share-item{
+    position: relative;
+  }
+  &__shedule-footer-share-item-share{
+    &:after{
+      content:"";
+      display: block;
+      position:absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 8px;
+
+    }
+    &:hover{
+      &>.mor-rep-calculators__selection-window-share{
+        display: block;
+      }
+
+    }
+  }
+
+  &__selection-window-share{
+    overflow: hidden;
+    box-shadow:none;
+    @media screen and (min-width: 470px){
+      transform: translateY(102%);
+      min-width: 320px;
+      border-radius: 16px;
+      box-shadow: 0 8px 40px 0 rgba(30,27,27,0.1);
+    }
+    padding: 0;
+    @include respondTo(small) {
+      padding-top: 16px;
+    }
+    .select-list__wr-search {
+      max-height: unset;
+      overflow-y: unset;
+      overflow-x: unset;
+    }
+    .select-list__search-item{
+      cursor:pointer;
+      display: flex;
+      align-items: center;
+      column-gap:8px;
+    }
+
+  }
+  &__modal-mail{
+    .feed_back__wr-checkbox{
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+  &__another-material{
+    position:relative;
+    .swiper-wrapper > .swiper-slide .element-banner{
+      &:nth-child(n+4) {
+        display: none;
+      }
+      &:nth-child(3) {
+        @include respondTo(mobile) {
+          display: none;
+        }
+        @include respondTo(small) {
+          display: block;
+        }
+      }
+    }
+    .swiper-wrapper > .swiper-slide{
+      &:nth-child(n+4) {
+        display: none;
+      }
+      &:nth-child(3) {
+        @include respondTo(mobile) {
+          display: none;
+        }
+        @include respondTo(small) {
+          display: block;
+        }
+      }
+    }
+    .container-swiper-arrow{
+      display: none;
+    }
+    .element-banner{
+      .element-banner__bottom{
+        z-index: 1;
+      }
+
+    }
+  }
+  &__wr-function-block{
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition-duration: .5s;
+    transition-property:grid-template-rows;
+    transition-timing-function: ease;
+    will-change: grid-template-rows;
+    padding-top: 0;
+    @include respondTo(mobile) {
+      //padding-top: 16px;
+    }
+    &.last-wr-function-block{
+      padding-top: 0;
+    }
+    &.always-active{
+      grid-template-rows: 1fr;
+    }
+
+  }
+  &__block{
+    &:not(.btn-result-active){
+      .mor-rep-calculators__add-early{
+        pointer-events: none;
+        background-color: transparent;
+        color:#999;
+        border-color:#999;
+        &:before{
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.004 0a1 1 0 011 1v8H19a1 1 0 110 2h-7.996v8a1 1 0 11-2 0v-8H1a1 1 0 110-2h8.004V1a1 1 0 011-1z' fill='%23999'/%3e%3c/svg%3e");
+        }
+      }
+    }
+  }
+  &__add-early{
+
+  }
+
+
+}
+
+
+.content-block-new-wrapper{
+  &>h2{
+    font-size: 32px;
+    line-height: 112%;
+    color:$color-text-new;
+    font-family: $ff-semi-bold;
+    margin-bottom: 24px;
+    @include respondTo(mobile) {
+      font-size: 24px;
+      line-height: 117%;
+      margin-bottom: 16px;
+    }
+    @include respondTo(small) {
+      font-size: 20px;
+      line-height: 120%;
+    }
+
+  }
+  margin-top: 64px;
+  @include respondTo(mobile) {
+    margin-top: 52px;
+  }
+  @include respondTo(small) {
+    margin-top: 40px;
+  }
+  .instruction-breeding__row-three-column{
+    //@include respondTo(mobile) {
+    //  grid-template-columns: repeat(2,1fr);
+    //
+    //}
+  }
+  .element-banner{
+    &:nth-child(n+4){
+      display: none;
+    }
+    @include respondTo(mobile) {
+      &:nth-child(n+3){
+        display: none;
+      }
+    }
+    @include respondTo(small) {
+      &:nth-child(n+2){
+        display: none;
+      }
+    }
+  }
+}
+.content-note{
+
+  &.desctop{
+    @include respondTo(small) {
+      display: none;
+    }
+  }
+  &.mobile{
+    display: none;
+    @include respondTo(small) {
+      display: block;
+    }
+  }
+
+}
+.content-note__text{
+  &.mor-rep-calculators__early-content-note{
+    @media screen and (max-width: 1640px){
+      transform: translate(-30%, -8px) !important;
+    }
+    &.up:after{
+      @media screen and (max-width: 1640px){
+        left: 33%;
+      }
+    }
+  }
+}
+.calc-tax-deduc-new__row-title-container .content-note__center .content-note__text{
+  &.mor-rep-calculators__early-content-note{
+    @media screen and (max-width: 1640px){
+      transform: translate(-30%, -8px) !important;
+    }
+    &.up:after{
+      @media screen and (max-width: 1640px){
+        left: 33%;
+      }
+    }
+  }
+}
+.grid-block-4-column{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  @media screen and (max-width: 1160px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.material__card{
+  position:relative;
+  &.desctop{
+    @media screen and (max-width: 630px){
+      display: none;
+    }
+  }
+  &.mobile{
+    display: none;
+    @media screen and (max-width: 630px){
+      display: block;
+    }
+  }
+
+}
+.calc-tax-deduc-new__acc-wr{
+  //&:not(.calendar-full.sum-full.period-full){
+  //  .btn-icon-plus{
+  //    pointer-events: none;
+  //    background-color: transparent;
+  //    color:#999;
+  //    border-color:#999;
+  //    &:before{
+  //      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.004 0a1 1 0 011 1v8H19a1 1 0 110 2h-7.996v8a1 1 0 11-2 0v-8H1a1 1 0 110-2h8.004V1a1 1 0 011-1z' fill='%23999'/%3e%3c/svg%3e");
+  //    }
+  //  }
+  //}
+}
+.js--acc-wr{}
+
+.block-grid-area__col{
+  &.btn-result-unactive {
+    .mor-rep-calculators__btn-result, .mor-rep-calculators__btn-result-mobile {
+      background-color: #e6e6e6;
+      color: #999;
+      border-color: transparent;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+  .mor-rep-calculators__btn-result{
+    //background-color: #e6e6e6;
+    //color: #999;
+    //border-color: transparent;
+  }
+  &.date-full.amount-full.period-full.date-begin.date-end{
+    .mor-rep-calculators__btn-result:not(.disabled){
+      //background-color: #252628;
+      //color: #fff;
+      //border-color: #252628;
+    }
+  }
+  &:not(.date-full):not(.amount-full):not(.period-full){
+    .mor-rep-calculators__btn-result:not(.disabled){
+      //background-color: #252628;
+      //color: #fff;
+      //border-color: #252628;
+    }
+  }
+
+}
+.mor-rep-calculators__btn-result{
+  &.date-full.amount-full.period-full{
+    background-color: red;
+  }
+  &.date-full.amount-full,.date-full.period-full,.amount-full.period-full,
+  .date-full,.period-full,.amount-full{
+    background-color: yellow;
+  }
+}
